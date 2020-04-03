@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <title>CSS Gradients</title>
+         <style>
+        
+           
+        
+            #box-0 {
+                width: 800px;
+                height: 700px;
+                margin: 0 auto;
+                position: relative;
+                background:linear-gradient(#050210 0%,#050210 5%);
+                filter: opacity(95%);
+                transform: translateY(0px);
+                
+            }
+            ::selection {
+                background-color: #050210;
+            }
+            #box-1 {
+                width: 660px;
+                height: 660px;
+                margin: 0 auto;
+                position:relative;
+                background: linear-gradient(#fb5dad 10%,#55fb9f 50%,#b97aff 90%);
+                border-radius: 360px;
+                overflow: hidden;
+                animation: my-animation-0;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+                filter: blur(35px);
+                
+            }
+            #box-1::selection {
+                background-color: #050210;
+                outline-width: 20px;
+            }
+            @keyframes my-animation-0 {
+             0% {
+                 transform: translate(0px,-678px) rotate(0deg);
+                 width: 660px;
+                 height: 660px;
+                  }
+             33% {
+                transform: translate(0px,-678px) rotate(120deg);
+                 width: 660px;
+                 height: 660px;
+             }
+             66% {
+                transform: translate(0px,-678px) rotate(240deg);
+                 width: 660px;
+                 height: 660px;
+             }
+             100% {
+                transform: translate(0px,-678px) rotate(360deg);
+                 width: 660px;
+                 height: 660px;
+             }
+         }
+            #box-2 {
+                width: 600px;
+                height: 600px;
+                margin: 0 auto;
+                position:relative;
+                background: linear-gradient(#fb5dad 10%,#55fb9f 50%,#b97aff 90%);
+                border-radius: 350px;
+                overflow: hidden;
+                animation: my-animation;
+                animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+                filter: contrast(100%);
+
+            }
+            #box-2::selection {
+                background-color: #050210;
+                outline-width: 20px;
+            }
+            @keyframes my-animation {
+             0% {
+                 transform: translate(0px,-1310px) rotate(0deg);
+                 width: 600px;
+                 height: 600px;
+                  }
+             33% {
+                transform: translate(0px,-1310px) rotate(120deg);
+                 width: 600px;
+                 height: 600px;
+             }
+             66% {
+                transform: translate(0px,-1310px) rotate(240deg);
+                 width: 600px;
+                 height: 600px;
+             }
+             100% {
+                transform: translate(0px,-1310px) rotate(360deg);
+                 width: 600px;
+                 height: 600px;
+             }
+         }
+       
+            #box-3 {
+                width: 500px;
+                height: 500px;
+                margin: 0 auto;
+                position: relative;
+                background:repeating-radial-gradient(#fb5dad 0%,#55fb9f 15%,#b97aff 5%);
+                border-radius: 250px;
+                overflow: hidden;
+                filter:blur(0px);
+                filter: opacity(95%);
+                animation: my-animation-1;
+                 animation-duration: 0.8s;
+                animation-iteration-count: infinite;
+                }
+                  #box3::selection {
+                background-color: #050210;
+                outline-offset: 10px;
+            }
+
+                @keyframes my-animation-1 {
+             0% {
+                 transform: translate(0px,-1860px) rotate(0deg);
+                 width: 500px;
+                 height: 500px;
+                  }
+             33% {
+                transform: translate(0px,-1860px) rotate(-120deg);
+                 width: 500px;
+                 height: 500px;
+             }
+             66% {
+                transform: translate(0px,-1860px) rotate(-240deg);
+                 width: 500px;
+                 height: 500px;
+             }
+             100% {
+                transform: translate(0px,-1860px) rotate(-360deg);
+                 width: 500px;
+                 height: 500px;
+             }
+         }
+
+         #box-4 {
+                width: 500px;
+                height: 500px;
+                margin: 0 auto;
+                position: relative;
+                background:linear-gradient(#050210 0%,#050210 5%);
+                border-radius: 250px;
+                overflow: hidden;
+                transform: translateY(-2360px);
+                filter: opacity(95%);
+            
+            }
+           
+           
+         </style>
+
+    </head>
+     <body>
+         
+               <div class="box" id="box-0"></div>
+               <div class="box" id="box-1"></div> 
+               <div class="box" id="box-2"></div>
+               <div class="box" id="box-3"></div>
+               <div class="box" id="box-4"></div>
+            
+    </body>
+</html>
